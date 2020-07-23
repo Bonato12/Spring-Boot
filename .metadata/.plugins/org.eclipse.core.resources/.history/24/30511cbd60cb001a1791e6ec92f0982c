@@ -1,0 +1,9 @@
+package com.bonato.springboot.webfacturas.app.models.domain;
+
+public class Producto {
+	
+	private String nombre;
+	private Integer precio;
+	
+	
+}

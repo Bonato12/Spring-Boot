@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <title th:text="${titulo}" ></title>
+  </head>
+  <body>
+  	<h1></h1>
+  	<h3 th:text="${factura.descripcion}"></h3>
+  	<div>
+  		Cliente: <span th:text="${factura.cliente.nombre + ' ' + factura.cliente.apellido}"></span>
+  	</div>
+  	<h4>Detalle de Factura</h4>
+  	<table>
+  		<thead>
+  			<tr>
+  				<th>Producto</th>
+  				<th>Precio</th>
+  				<th>Cantidad</th>
+  				<th>Total</th>
+  			</tr> 
+  		</thead>
+  		<tbody>
+  			<tr th:each="item: ${factura.items}">
+  				<td>${item.producto.nombre}</td>
+  				<td>${item.producto.precio}</td>
+  			    <td>${item.cantidad}</td>
+  				<td>td><td>${item.producto.precio * item.cantidad}</td></td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </body>
+</html>

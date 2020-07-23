@@ -1,0 +1,5 @@
+package com.bonato.springboot.webfacturas.app.models.domain;
+
+public class Cliente {
+
+}

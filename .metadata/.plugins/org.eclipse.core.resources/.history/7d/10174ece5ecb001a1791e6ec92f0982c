@@ -1,0 +1,7 @@
+package com.bonato.springboot.webfacturas.app.controllers;
+
+
+@Controller
+public class FacturaController {
+
+}

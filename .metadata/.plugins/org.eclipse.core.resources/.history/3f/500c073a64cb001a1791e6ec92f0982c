@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <title th:text="${titulo}" ></title>
+  </head>
+  <body>
+  	<h1></h1>
+  	<h3 th:text="${factura.descripcion}"></h3>
+  	<div>
+  		Cliente: <span th:text="${factura.cliente.nombre + ' ' + factura.cliente.apellido}"></span>
+  	</div>
+  </body>
+</html>

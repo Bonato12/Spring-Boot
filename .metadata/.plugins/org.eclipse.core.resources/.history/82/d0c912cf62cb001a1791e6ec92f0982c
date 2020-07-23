@@ -1,0 +1,16 @@
+package com.bonato.springboot.webfacturas.app;
+
+import java.util.List;
+
+import org.springframework.context.annotation.Bean;
+
+import com.bonato.springboot.webfacturas.app.models.domain.ItemFactura;
+
+public class AppConfig {
+	
+	@Bean("itemsFactura")
+	public List<ItemFactura> registrarItems(){
+		
+	}
+
+}

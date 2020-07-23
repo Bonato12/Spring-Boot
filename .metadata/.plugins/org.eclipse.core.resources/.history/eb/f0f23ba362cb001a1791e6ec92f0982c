@@ -1,0 +1,8 @@
+package com.bonato.springboot.webfacturas.app;
+
+public class AppConfig {
+	
+	@Bean
+	Public List<ItemFactura>
+
+}

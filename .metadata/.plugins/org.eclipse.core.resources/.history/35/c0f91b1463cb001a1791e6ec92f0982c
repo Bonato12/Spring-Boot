@@ -1,0 +1,19 @@
+package com.bonato.springboot.webfacturas.app;
+
+import java.util.List;
+
+import org.springframework.context.annotation.Bean;
+
+import com.bonato.springboot.webfacturas.app.models.domain.ItemFactura;
+import com.bonato.springboot.webfacturas.app.models.domain.Producto;
+
+public class AppConfig {
+	
+	@Bean("itemsFactura")
+	public List<ItemFactura> registrarItems(){
+		Producto producto1 = new Producto("CPU Ryzen 7", 12000);
+		Producto producto2 = new Producto("Notebook Asus", 25000)
+			
+	}
+
+}

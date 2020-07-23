@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <title >Curso Spring5</title>
+  </head>
+  <body>
+  	<h1>Enviar Parametros GET-URL</h1>  	
+  	<li><a th:href="@{/params/mix(saludo='Hola Sebastian', numero=5)}">params/mix?saludo=Hola Sebastian&numero=5</a></li>
+  	<li><a th:href="@{/params/mix-request(saludo='Hola Sebastian', numero=5)}">params/mix-request?saludo=Hola Sebastian&numero=5</a></li>
+  </body>
+</html>
